@@ -10,9 +10,11 @@ This repository contains the projects I am building while learning and improving
 - JavaScript
 
 ## 📂 Projects
-- Portfolio Website (Coming Soon)
-- To-Do App (In Progress)
-- Calculator App (Planned)
+- Portfolio Website 
+- To-Do App 
+- Age Calculator
+- Weather App (in progress)
+- Shopping website (in progress)
 
 ## 🎯 Goal
 To build real-world responsive websites and become a skilled software developer.
