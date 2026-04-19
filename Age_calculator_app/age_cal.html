@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./age_cal.css">
+
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="container">
+    <h1>Age Calculator</h1>
+    <p id="greeting"></p>
+
+    <form id="ageForm">
+
+        <!-- Inputs in one row -->
+        <div class="input-group">
+            <input type="number" id="birthDay" placeholder="DD" min="1" max="31" required>
+            <input type="number" id="birthMonth" placeholder="MM" min="1" max="12" required>
+            <input type="number" id="birthYear" placeholder="YYYY" required>
+        </div>
+
+        <button id="calculateage">Calculate Age</button>
+    </form>
+
+    <p id="ageResult"></p>
+</main>
+
+<script src="./age_cal2.js"></script>
+</body>
+</html>
