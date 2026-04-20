@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link  rel="icon" type="image/x-icon" href="./images/logo.png">
+     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+</head>
+<body>
+    <!--navbar-->
+    <nav>
+        <div class="logo">
+            <img class="logo-img" src="./images/logo.png" alt="Logo"> 
+        </div>
+        <ul class ="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--hero section-->
+    <section id="home" class="hero">
+        <h1>Hello, I'm Deepak Kumar Sinha</h1>
+        <p>Front-end Developer</p>
+        <button><a style="text-decoration: none; color: white;" href="#projects">View My Work</a></button>
+    </section>
+
+    <!--About-->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+     <p>
+Hi, I’m Deepak, a BCA student passionate about front-end development.
+
+I specialize in building responsive and user-friendly web interfaces using 
+HTML, CSS, and JavaScript. I have created projects like an Age Calculator, 
+Todo App, and my personal portfolio to strengthen my practical skills.
+
+Currently, I am focused on improving my problem-solving abilities and 
+learning modern tools to become a professional software developer.
+</p>
+    </section>
+    
+    <!--skills-->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill-card">   
+            <i class="devicon-html5-plain-wordmark"></i>
+          
+            </div>
+            <div class="skill-card">
+                
+            <i class="devicon-css3-plain-wordmark"></i>
+          
+            </div>
+            <div class="skill-card">
+                
+            <i class="devicon-javascript-plain"></i>
+          
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-container">
+        <div class="card">
+            <h3>Age Calculator</h3>
+            <a href="/Age_calculator_app/age_cal.html">View Project</a>
+        </div>
+        <div class="card">
+            <h3>Todo App</h3>
+            <a href="/Todo_app/todo.html">View Project</a>
+        </div>
+        <div class="card">
+            <h3>Portfolio</h3>
+            <a href="#">View Project</a>
+        </div>
+    </div>
+    </section> 
+    <!--Contact-->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+
+    <!-- Links -->
+    <div class="contact-links">
+      <a target="_blank" href="https://github.com/deepakwebbuilds/web-development-projects/blob/main/README.md">
+        
+            <i class="devicon-github-original-wordmark"></i>
+          
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/deepak-kumar-sinha-3052713a2">
+           
+            <i class="devicon-linkedin-plain"></i>
+          
+          </a>
+      
+    </div>
+
+    <!-- Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button>Send</button>
+    </form>
+
+  </div>
+    </section>
+
+</body>
+</html>
