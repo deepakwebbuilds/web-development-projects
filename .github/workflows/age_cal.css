@@ -1,0 +1,140 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(18px);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: white;
+
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TITLE */
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* GREETING */
+#greeting {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+/* INPUT GROUP (ROW LAYOUT) */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* INPUT BOXES */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+
+  transition: 0.25s;
+}
+
+/* INPUT FOCUS EFFECT */
+.input-group input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  background: linear-gradient(135deg, #ff7eb3, #ff4f91);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 79, 145, 0.4);
+}
+
+/* BUTTON CLICK */
+button:active {
+  transform: scale(0.96);
+}
+
+/* RESULT TEXT */
+#ageResult {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+/* SHOW RESULT (you'll trigger this via JS) */
+#ageResult.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 420px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}
